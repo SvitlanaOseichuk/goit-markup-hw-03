@@ -5,6 +5,7 @@
     --logo-color: #4D5AE5;
     --c-active: #404BBF;
     --c-light: #F4F4FD;
+    --c-border: #E7E9FC;
 
 }
 
@@ -16,6 +17,10 @@ body {
     color: var(--color-primary);
     background-color: var(--color-primary-light);
     }
+
+main {
+    flex-grow: 1;
+}
 
 a {
     text-decoration: none;
@@ -42,12 +47,16 @@ section {
     padding: 120px 0;
 }
 
-
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 32px;
+    justify-content: center;
 }
 
 .hero-button {
@@ -70,6 +79,11 @@ section {
 
 
 /*header*/
+
+.header {
+    border-bottom: 1px solid var(--c-border);
+}
+
 .logo {
     color: var(--logo-color);
     font-weight: 700;
@@ -102,6 +116,7 @@ section {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    padding: 0 156px;
 }
 
 .header-nav {
@@ -159,6 +174,43 @@ section {
 
 /*hero-section*/
 
+
+.hero-section {
+    padding: 0;
+}
+
+.hero-inner{
+    background-color: var(--c-brand);
+    padding: 188px 0;
+}
+
+.hero-ection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.hero-title {
+    color: var(--color-primary-light);
+    background-color: var(--color-brand);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    
+    max-width: 496px;
+    margin: 0 auto;
+}
+
+
+/*advantage section*/
+
+.advantages-section {
+    background-color: var(--color-primary-light);
+}
+
 .visualy-hidden {
     position: absolute;
     width: 1px;
@@ -170,34 +222,15 @@ section {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}    
-
-
-.hero-section {
-    background-color: var(--c-brand);
-    padding: 188px 0;
 }
 
-.hero-title {
-    color: var(--color-primary-light);
-    background-color: var(--color-brand);
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 48px;
-    max-width: 496px;
-    margin: 0 auto;
+.advantages-list {
+    display: flex;
+    gap: 24px;
+    margin: 0 156px;
+    justify-content: center;
 }
 
-
-/*advantage section*/
-
-.advantages-section {
-    background-color: var(--color-primary-light);
-    padding: 120px 0;
-}
 .advantages-title {
     color: var(--c-brand);
     font-weight: 500;
@@ -223,6 +256,7 @@ section {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 70px;
 }
 
 .name-title,
@@ -239,21 +273,74 @@ section {
     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
+/*our team*/
 .team-section {
     background-color: var(--c-light);
 }
 
 .text-team-bgc {
     background-color: #FFF;
+    flex-basis: calc((100%-72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-items{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+/*portfolio*/
 .portfolio-section {
     background-color: var(--color-primary-light);
 }
 
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: var(--color-primary-light);
+    border: 1px solid var(--c-border);
+    width: calc((100%-72px) / 2);
+}
+
+.p-title-text {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    padding:0 16px;
+}
+
 
 /*footer*/
+
+.footer-con {
+    background-color: var(--c-brand);
+    padding: 100px 0 100px 156px ;
+
+
+}
+
 .footer-logo{
     color: var(--logo-color);
     font-weight: 700;
@@ -274,10 +361,12 @@ section {
     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    padding: 17,5px;
 }
 
 .footer {
-    background-color: var(--c-brand);
+   padding: 0;
 }
 
 
