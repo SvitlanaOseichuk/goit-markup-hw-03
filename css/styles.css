@@ -357,16 +357,16 @@ section {
     margin-bottom: 8px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc; 
+    border-top: none;
+    
+
 }
 
 
 /*footer*/
 
-.footer-con {
+.footer{
     background-color: var(--c-brand);
-    padding: 100px 0 100px 156px ;
-
-
 }
 
 .footer-logo{
@@ -379,7 +379,7 @@ section {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-    
+
 }
 
 .f-logo-accent {
