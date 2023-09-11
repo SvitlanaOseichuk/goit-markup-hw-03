@@ -82,6 +82,7 @@ section {
 
 .header {
     border-bottom: 1px solid var(--c-border);
+    width: 1158px; 
 }
 
 .logo {
@@ -93,6 +94,7 @@ section {
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;
+    margin-right: 76px
 }
 
 .logo-accent {
@@ -112,11 +114,12 @@ section {
 }
 
 .header-inner {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 0 156px;
+    display: flex;
+    padding: 0 15px 0 15px;
 }
 
 .header-nav {
@@ -156,6 +159,10 @@ section {
 
 .address {
     font-style: normal 
+}
+
+.address-list {
+    display: flex;
 }
 
 .address-link {
@@ -199,7 +206,6 @@ section {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    
     max-width: 496px;
     margin: 0 auto;
 }
@@ -231,12 +237,18 @@ section {
     justify-content: center;
 }
 
+.advantage-item {
+    width: calc((100% - 72px) / 4);
+}
+
+
 .advantages-title {
     color: var(--c-brand);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantage-text {
@@ -266,6 +278,7 @@ section {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 72px
 }
 
 .team-text,
@@ -283,7 +296,7 @@ section {
 
 .text-team-bgc {
     background-color: #FFF;
-    flex-basis: calc((100%-72px) / 4);
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -295,12 +308,21 @@ section {
 }
 
 .team-items{
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px
+    gap: 8px;
+    padding: 32px 0;
+}
+
+.name-title {
+    margin-top: 32px;
+    margin-bottom: 8px
+}
+
+.team-text {
+    text-align: center;
 }
 
 /*portfolio*/
@@ -313,22 +335,23 @@ section {
     gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .portfolio-item {
     background: var(--color-primary-light);
-    border: 1px solid var(--c-border);
-    width: calc((100%-72px) / 2);
+    border: 1px solid #e7e9fc; 
+    width: calc((100% - 48px) / 3)
+    
 }
 
 .p-title-text {
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-    padding:0 16px;
+    align-items: flex-start; 
+    margin-bottom: 8px;
+    padding: 32px 16px;
 }
 
 
@@ -349,6 +372,8 @@ section {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .f-logo-accent {
@@ -361,12 +386,11 @@ section {
     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
-    padding: 17,5px;
+    max-width: 264px
 }
 
 .footer {
-   padding: 0;
+    padding: 100px 0;
 }
 
 
