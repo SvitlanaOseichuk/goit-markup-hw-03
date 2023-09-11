@@ -243,7 +243,6 @@ section {
     width: calc((100% - 72px) / 4);
 }
 
-
 .advantages-title {
     color: var(--c-brand);
     font-weight: 500;
@@ -317,6 +316,7 @@ section {
     align-items: center;
     gap: 8px;
     padding: 32px 0;
+    
 }
 
 .name-title {
