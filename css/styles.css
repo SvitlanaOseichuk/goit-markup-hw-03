@@ -63,23 +63,6 @@ img {
     padding: 0 15px;
 }
 
-.hero-button {
-    color: var(--color-primary-light);
-    background-color: var(--logo-color);
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--c-active);    
-}
 
 
 /*header*/
@@ -160,9 +143,6 @@ img {
     font-style: normal; 
 }
 
-.address-list {
-    display: flex;
-}
 
 .address-link {
     color: var(--color-primary);
@@ -186,12 +166,32 @@ img {
     padding: 188px 0;
 }
 
-.hero-ection {
-    display: flex;
+.hero-button {
+    color: var(--color-primary-light);
+    background-color: var(--logo-color);
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-top: 48px;
+    min-width: 169px;
+    height: 56px;
 }
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--c-active);    
+}
+
+
+
 
 .hero-title {
     color: var(--color-primary-light);
